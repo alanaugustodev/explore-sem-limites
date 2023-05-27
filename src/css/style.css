@@ -2,9 +2,67 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    border: none;
 }
 
 :root{
+    font-size: 62.5%;
+
+    --bg-color-primary: #F9F4FB;
+    --bg-color-secondary: linear-gradient(96.21deg, #343193 0%, #302C63 99.68%);
+
+    --fc-titles: #B52184;
+}
+
+body, button, input{
     font-family: 'Mulish', sans-serif;
 }
 
+body{
+    display: grid;
+    justify-items: center;
+    font-size: 1.6rem;
+    
+    background-color: var(--bg-color-primary);
+}
+
+header{
+    width: 43.0rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header > img{
+    width: 36.4rem;
+    height: 37.0rem;
+}
+
+header > h1{
+    width: 30.5rem;
+    font-size: 3.2rem;
+    font-weight: 900;
+    color: var(--fc-titles);
+    margin: 1.7rem 0 .5rem;
+}
+
+header > p{
+    margin-bottom: 3.5rem;
+
+    font-size: 2.0rem;
+    font-weight: 600;
+}
+
+header > button{
+    display: grid;
+    place-content: center;
+
+    width: 5.8rem;
+    height: 10.5rem;
+
+    border: .4rem solid var(--fc-titles);
+    border-radius: 76.0rem;
+
+    font-size: 6rem;
+    color: var(--fc-titles);
+}
