@@ -18,10 +18,11 @@
 
 body, button, input{
     font-family: 'Mulish', sans-serif;
+    font-size: 1.6rem;
     font-weight: 600;
 }
 
-h1, h2{    
+h1, h2, legend{    
     font-weight: 900;
     color: var(--font-color-title);
 }
@@ -33,17 +34,17 @@ p, input,textarea{
 button{
     cursor: pointer;
 }
-
 body{
     display: grid;
     justify-items: center;
-    font-size: 1.6rem;
-    
     background-color: var(--bg-color-primary);
 }
 
+.page{    
+    width: 43.0rem;    
+}
+
 header{
-    width: 43.0rem;
     height: 67.9rem;
     display: flex;
     flex-direction: column;
@@ -112,4 +113,47 @@ main{
 
 .text_content > h2{
     font-size: 2.9rem;
+}
+
+section{
+    width: 100%;
+    padding: 7.8rem 3.9rem 6.5rem;
+}
+
+form{
+
+}
+
+form > fieldset {
+    display: grid;
+    gap: 2.4rem;
+}
+
+fieldset > legend{
+    font-size: 3.2rem;
+    margin-bottom: 4.3rem;
+}
+
+fieldset > input{
+    width: 100%;
+    padding: 1.6rem 1.6rem;
+    padding-left: 5.0rem;
+
+    color: var(--font-color-paragraph);
+    
+    border: 0.2rem solid #312D64;
+    border-radius: 1.6rem;
+} 
+
+fieldset > input::placeholder,
+fieldset > textarea::placeholder {
+    color: var(--font-color-paragraph);
+}
+#inputName{
+    position: relative;
+}
+fieldset > #inputName::before{
+    content: " ";
+    width: 10.0rem;
+    height: 10.1rem;
 }
